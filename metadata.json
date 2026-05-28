@@ -1,0 +1,6 @@
+{
+  "name": "Roblox Game Pack Generator",
+  "description": "An AI-powered generator that creates complete Roblox game packs with Lua scripts, maps instructions, and structure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

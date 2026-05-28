@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile with tier limits",
+      "type": "object",
+      "properties": {
+        "tier": { "type": "string", "enum": ["free", "pro", "premium"] },
+        "generationsUsed": { "type": "number" },
+        "chatUsed": { "type": "number" },
+        "resetsAt": { "type": "string" }
+      },
+      "required": ["tier", "generationsUsed", "chatUsed", "resetsAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User tier data and limits"
+    }
+  }
+}

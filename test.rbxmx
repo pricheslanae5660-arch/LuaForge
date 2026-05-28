@@ -1,0 +1,16 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+  <Meta name="ExplicitAutoJoints">true</Meta>
+  <External>null</External>
+  <External>nil</External>
+  <Item class="Folder" referent="RBX1">
+    <Properties>
+      <string name="Name">GamePack</string>
+    </Properties>
+    <Item class="Script" referent="RBX2">
+      <Properties>
+        <string name="Name">MainScript</string>
+        <string name="Source"><![CDATA[print('Hello World!')]]></string>
+      </Properties>
+    </Item>
+  </Item>
+</roblox>

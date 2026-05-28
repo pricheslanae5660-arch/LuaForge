@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+    <script>
+      // Polyfill safeguard to prevent "Cannot set property fetch of #<Window> which has only a getter"
+      // which can be thrown by browser extensions or platform iframes injecting fetch polyfills.
+      try {
+        if (window.fetch) {
+          const originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: () => originalFetch,
+            set: (newVal) => {
+              console.log('Ignored attempt to overwrite window.fetch');
+            },
+            configurable: true,
+            enumerable: true
+          });
+        }
+      } catch(e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
